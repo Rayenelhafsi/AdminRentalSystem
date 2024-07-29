@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+project(RentalDatabase)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(xlnt/include)
+link_directories(xlnt/build)
+add_executable(RentalDatabase main.cpp)
+target_link_libraries(RentalDatabase xlnt)
